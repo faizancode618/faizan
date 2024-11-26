@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: rgba(255, 0, 0, 0.5); */
+}
+
+body{
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+#loader{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#loader .load-circle{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    border-right: 5px solid white;
+    background: transparent;
+    
+    animation: rotate 1s ease-in-out infinite;
+}
+
+#loader.deactive{
+    animation: fade 1s ease forwards;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.hero{
+    background-image: url("./assets/images/bridge.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.upper-nav-wrapper{
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.upper-nav{
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.upper-nav select{
+    background: transparent;
+    color: rgba(255,255,255,0.6);
+    border: none;
+}
+
+.upper-nav select:last-child{
+    border-left: 1px solid rgba(255,255,255,0.3);
+    padding: 7px;
+}
+
+nav menu{
+    gap: 1.8rem;
+    display: flex;
+    list-style-type: none;
+}
+
+footer menu li a,
+nav menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 5px;
+    transition: border-bottom 0.1s ease, color 0.2s ease;
+}
+
+footer menu li a:hover,
+nav menu li a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid orange;
+    color: orange;
+}
+
+footer menu li a.active,
+nav menu li a.active{
+    text-decoration: none;
+    border-bottom: 2px solid orange;
+    color: orange;
+}
+
+.hero-bottom-content{
+    color: #fff;
+    margin-top: 200px;
+}
+
+.accent-para{
+    color: orange;
+    padding: 0;
+}
+
+.hero-bottom-content h2{
+    font-size: 40px;
+    text-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.hero-bottom-content menu{
+    list-style-type: none;
+}
+
+.hero-bottom-content menu li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-bottom-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.action-btn{
+    padding: 10px 2.2rem;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.action-btn:hover{
+    background: orange;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.action-btn.alt{
+    background: orange;
+    color: #000;
+}
+
+.action-btn.alt:hover{
+    background: black;
+    color: orange;
+    transform: scale(1.1);
+}
+
+.yt-video,
+.top-rated-deals{
+    margin: 100px 0;
+}
+
+.top-rated-deals img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.top-rated-deals img:hover{
+    transform: scale(1.2);
+}
+
+.top-rated-deals .image{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.book-your-ticket{
+    background: linear-gradient(45deg, orange, rgb(253, 189, 69));
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 100px 0;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.counter .box{
+    width: 100px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.slitted-imgs{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.slitted-imgs img:nth-child(1){
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.slitted-imgs img:nth-child(2){
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid #fff;
+}
+
+.sale-and-call-section{
+    margin-top: 300px;
+    overflow: hidden;
+}
+
+.sale-and-call-section .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.4);
+}
+
+.sale-and-call-section .sale-section{
+    background: url("./assets/images/kashmir.webp");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.sale-and-call-section .call-section{
+    background: url("./assets/images/bridge.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.sale-and-call-section .sale-section,
+.sale-and-call-section .call-section{
+    text-align: center;
+    color: #fff;
+}
+
+.sale-and-call-section .percentage{
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.sponsors-section{
+    text-align: center;
+    margin: 100px 0;
+}
+
+.sponsors-section .image{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors-section img{
+    width: 50%;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+footer .subscription-section{
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.05);
+}
+
+footer .subscription-section h2{
+    margin-bottom: 0;
+}
+
+footer .logo{
+    margin-bottom: 20px;
+}
+
+footer p{
+    font-size: 0.8rem;
+}
+
+footer menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+footer img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+footer img:hover{
+    transform: scale(1.2);
+}
+
+footer .image{
+    overflow: hidden;
+}
+
+.tour-schedule-section{
+    margin: 100px 0;
+    text-align: center;
+}
+/* 
+@media (max-width: 567px){
+    .tour-schedule-section{
+        width: 1000px;
+        overflow: scroll;
+    }
+} */
+
+.tour-schedule-section menu{
+    list-style-type: none;
+    display: flex;
+    flex-basis: 200px;
+    flex-wrap: wrap;
+}
+
+.tour-schedule-section menu li{
+    flex: 1;
+    
+    padding: 5px;
+    background: #eee;
+}
+
+.tour-schedule-section menu li.active{
+    background: orange;
+}
+
+.tour-schedule-section menu li.active p{
+    color: #fff;
+}
+
+.tour-schedule-section menu li h2{
+    font-weight: bolder;
+}
+
+.tour-schedule-section menu li p{
+    margin: 0;
+}
+
+.tour-schedule-section .schedules{
+    padding: 10px 0;
+}
+
+.tour-schedule-section .schedules .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tour-schedule-section .schedules img{
+    width: 50%;
+}
+
+.tour-schedule-section .schedules .tour-path{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-schedule-section .schedules .dot{
+    width: 1rem;
+    height: 1rem;
+    background: #000;
+    position: relative;
+    border-radius: 50%;
+}
+
+.tour-schedule-section .schedules .dot::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 100px;
+    height: 2px;
+    background: #000;
+}
+
+.tour-schedule-section .schedules .dot::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100px;
+    height: 2px;
+    background: #000;
+}
+
+.burger-menu{
+    width: 20px;
+    height: 20px;
+}
+
+.burger-menu img{
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 567px) {
+    .subscription-section{
+        flex-direction: column;
+        gap: 20px;
+        font-size: 10px;
+    }
+
+    .comfortable-journey .container{
+        padding: 0 1rem;
+    }
+
+    .comfortable-journey .slitted-content{
+        margin-top: 10rem;
+    }
+
+    .subscription-section h2{
+        font-size: 1rem;
+    }
+    footer menu{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    footer .imgs{
+        gap: 30px;
+    }
+    .tour-schedule-section .schedules .image{
+        width: 75%;
+    }
+}
