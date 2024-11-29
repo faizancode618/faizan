@@ -1,433 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Tour Web</title>
-</head>
-<body>
-    <div id="loader">
-        <div class="load-circle"></div>
-    </div>
-    <div class="hero">
-        <div class="hero-overlay">
-            <div class="upper-nav-wrapper">
-                <div class="container">
-                    <div class="upper-nav">
-                        <p>Contact Us Now (+92)327-8848936</p>
-                        <div>
-                            <select name="" id="">
-                                <option value="eng">ENG</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="eng">PKR</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <nav class="w-100 d-flex justify-content-between align-items-center text-white py-3">
-                    <div class="logo">
-                        <h3>Eventuros</h3>
-                    </div>
-                    <menu class="d-md-flex d-none">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing and Booking</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </menu>
-                    <div class="burger-menu d-md-none d-block">
-                        <img src="./assets/images/burger-menu.svg" alt="">
-                    </div>
-                </nav>
-            </div>
-            <div class="hero-bottom-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-12">
-                            <p class="accent-para">we love you</p>
-                            <h2>Where you would</h2>
-                            <h2>Like To Go</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque nobis, fugit asperiores laudantium obcaecati et assumenda exercitationem aliquid ipsa.</p>
-                        </div>
-                        <div class="col-4 d-md-block d-none">
-                            <br>
-                            <br>
-                            <menu>
-                                <li><p>Lorem ipsum dolor sit aperum color mega</p><img src="./assets/images/calender.svg" alt="" style="width: 50px; height: 50px;"></li>
-                                <li><p>Lorem ipsum dolor sit aperum color mega</p><img src="./assets/images/building.svg" alt="" style="width: 50px; height: 50px;"></li>
-                                <li><p>Lorem ipsum dolor sit aperum color mega</p><img src="./assets/images/trust.svg" alt="" style="width: 50px; height: 50px;"></li>
-                            </menu>
-                        </div>
-                        <div class="col-md-4 d-md-block d-none">
-                            <br>
-                            <br>
-                            <menu>
-                                <li><p>Lorem ipsum dolor sit aperum color mega</p><img src="./assets/images/calender.svg" alt="" style="width: 50px; height: 50px;"></li>
-                                <li><p>Lorem ipsum dolor sit aperum color mega</p><img src="./assets/images/building.svg" alt="" style="width: 50px; height: 50px;"></li>
-                                <li><p>Lorem ipsum dolor sit aperum color mega</p><img src="./assets/images/trust.svg" alt="" style="width: 50px; height: 50px;"></li>
-                            </menu>
-                        </div>
-                    </div>
-                    <!-- <div class="d-flex justify-content-center">
-                        <button class="action-btn">Learn More</button>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- top Rated Deals -->
-    <div class="top-rated-deals">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <div class="image">
-                        <img src="./assets/images/hero-bg-2.webp" alt="">
-                    </div>
-                    <p class="mb-0 mt-1">Pakistan</p>
-                    <strong>Rs.12000</strong>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="image">
-                        <img src="./assets/images/bridge.jpg" alt="">
-                    </div>
-                    <p class="mb-0 mt-1">France</p>
-                    <strong>Rs.390000</strong>
-                </div>
-                <div class="col-12 col-md-6 my-md-0 my-3">
-                    <p class="accent-para">we love you</p>
-                    <h2>Explore Top Rated Deals</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque nobis, fugit asperiores laudantium obcaecati et assumenda exercitationem aliquid ipsa.</p>
-                    <button class="action-btn">Learn More</button>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-6 col-md-3">
-                    <div class="image">
-                        <img src="./assets/images/Eiffel-Tower.webp" alt="">
-                    </div>
-                    <p class="mb-0 mt-1">Paris</p>
-                    <strong>Rs.909000</strong>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="image">
-                        <img src="./assets/images/sabeer-darr.webp" alt="">
-                    </div>
-                    <p class="mb-0 mt-1">Pakistan</p>
-                    <strong>Rs.12000</strong>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="image">
-                        <img src="./assets/images/kashmir.webp" alt="">
-                    </div>
-                    <p class="mb-0 mt-1">Kashmir, Pakistan</p>
-                    <strong>Rs.12000</strong>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="image">
-                        <img src="./assets/images/k2.webp" alt="">
-                    </div>
-                    <p class="mb-0 mt-1">K2, Pakistan</p>
-                    <strong>Rs.50000</strong>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Book Your Ticket -->
-    <div class="book-your-ticket">
-        <div class="container">
-            <p>Lorem ipsum dolor sit</p>
-            <h2>Book Your Ticket</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae porro <br/> voluptatum obcaecati!</p>
-            <div class="counter">
-                <div class="box">
-                    <h3>18</h3>
-                    <p class="mb-0">Sept</p>
-                </div>
-                <div class="box">
-                    <h3>37</h3>
-                    <p class="mb-0">August</p>
-                </div>
-                <div class="box">
-                    <h3>08</h3>
-                    <p class="mb-0">July</p>
-                </div>
-                <div class="box">
-                    <h3>24</h3>
-                    <p class="mb-0">June</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Schedules Of Tours -->
-    <div class="tour-schedule-section">
-        <p class="accent-para">get ready</p>
-        <h2>Schedules Of Tours</h2>
-        <div class="container">
-            <menu>
-                <li class="active">
-                    <p>Day</p>
-                    <h5>Monday</h5> 
-                </li>
-                <li>
-                    <p>Day</p>
-                    <h5>Tuesday</h5>
-                </li>
-                <li>
-                    <p>Night</p>
-                    <h5>Wednesday</h5>
-                </li>
-                <li>
-                    <p>Night</p>
-                    <h5>Thursday</h5>
-                </li>
-                <li>
-                    <p>Day</p>
-                    <h5>Friday</h5>
-                </li>
-            </menu>
-            <div class="row schedules">
-                <div class="col-12 col-md-2 image">
-                    <img src="./assets/images/daewoo-logo.png" alt="">
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Kashmir</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-4 tour-path">
-                    <div class="dot"></div>
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Lahore</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-12 col-md-2">
-                    <h3>$980</h3>
-                    <button class="action-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="row schedules">
-                <div class="col-12 col-md-2 image">
-                    <img src="./assets/images/toyota-logo.png" alt="">
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Kashmir</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-4 tour-path">
-                    <div class="dot"></div>
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Lahore</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-12 col-md-2">
-                    <h3>$980</h3>
-                    <button class="action-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="row schedules">
-                <div class="col-12 col-md-2 image">
-                    <img src="./assets/images/skyways-logo.png" alt="">
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Kashmir</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-4 tour-path">
-                    <div class="dot"></div>
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Lahore</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-12 col-md-2">
-                    <h3>$980</h3>
-                    <button class="action-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="row schedules">
-                <div class="col-12 col-md-2 image">
-                    <img src="./assets/images/bilal-travels-logo.png" alt="">
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Kashmir</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-4 tour-path">
-                    <div class="dot"></div>
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Lahore</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-12 col-md-2">
-                    <h3>$980</h3>
-                    <button class="action-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="row schedules">
-                <div class="col-12 col-md-2 image">
-                    <img src="./assets/images/daewoo-logo.png" alt="">
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Kashmir</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-4 tour-path">
-                    <div class="dot"></div>
-                </div>
-                <div class="col-4 col-md-2">
-                    <p class="m-0 accent-para">First</p>
-                    <h4>Lahore</h4>
-                    <p class="m-0">Buy Ticket</p>
-                </div>
-                <div class="col-12 col-md-2">
-                    <h3>$980</h3>
-                    <button class="action-btn">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Youtube Video -->
-    <div class="yt-video">
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/cZf_0OcNE9o?si=LKuigPdHmoqvoeou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <!-- Comfortable Journey -->
-    <div class="comfortable-journey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 slitted-imgs">
-                    <img src="./assets/images/hero-bg.webp" alt="">
-                    <img src="./assets/images/Eiffel-Tower.webp" alt="">
-                </div>
-                <div class="col-12 col-md-6 slitted-content px-3">
-                    <p class="accent-para">we love you</p>
-                    <h2>Being your Comfortable</h2>
-                    <h2>journey with us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque nobis, fugit asperiores laudantium obcaecati et assumenda exercitationem aliquid ipsa.</p>
-                    <button class="action-btn">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Sale and Call now Section -->
-    <div class="sale-and-call-section">
-        <div class="row">
-            <div class="col-12 col-md-6 sale-section px-0">
-                <div class="content">
-                    <p class="accent-para">we love you</p>
-                    <p class="percentage">25% Sale</p>
-                    <h3>Best Holiday Package</h3>
-                    <h3>for Honeymoon</h3>
-                    <button class="action-btn">Learn More</button>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 call-section px-0">
-                <div class="content">
-                    <p class="accent-para">we love you</p>
-                    <p class="percentage">Call Now</p>
-                    <h2>book your tour for</h2>
-                    <h2>your next destination.</h2>
-                    <button class="action-btn alt">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Sponsors -->
-    <div class="sponsors-section">
-        <div class="container">
-            <p class="accent-para">why you trust</p>
-            <h2>Our Official Sponsors</h2>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <div class="image">
-                        <img src="./assets/images/toyota-logo.png" alt="Toyota Logo">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="image">
-                        <img src="./assets/images/skyways-logo.png" alt="SkyWays Logo">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="image">
-                        <img src="./assets/images/daewoo-logo.png" alt="Daewoo Logo">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="image">
-                        <img src="./assets/images/bilal-travels-logo.png" alt="Bilal Travels Logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="subscription-section">
-                <h2>Subscribe to get offers</h2>
-                <button class="action-btn">Subscribe</button>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="logo">
-                        <h3>Eventuros</h3>
-                    </div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus perspiciatis reiciendis quibusdam?</p>
-                </div>
-                <div class="col-12 col-md-9">
-                    <menu>
-                        <li><a href="/" class="active">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/places">Places</a></li>
-                        <li><a href="/guide">Guide</a></li>
-                        <li><a href="/tour">Tour</a></li>
-                    </menu>
-                    <div class="row imgs">
-                        <div class="col-sm-4 col-12">
-                            <div class="image">
-                                <img src="./assets/images/kashmir.webp" alt="Kashmir">
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-12">
-                            <div class="image">
-                                <img src="./assets/images/k2.webp" alt="K2">
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-12">
-                            <div class="image">
-                                <img src="./assets/images/sabeer-darr.webp" alt="sabeer-darr">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("loader").classList.add("deactive");
-        })
-    </script>
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ALONE CLUB</title>
+     <center>
+          <table border="10">
+          <caption style="font-size: xx-large;background-color: yellow;">TIME TABLE</caption>
+          <tr>
+          
+               <th> Day/Time</th>
+               <th> 7:00 To 8:00</th>
+               <th> 8:00 To 8:45</th>
+               <th> 8:45 To 9:30</th>
+               <th> 9:30 To 10:30</th>
+              <th> 10:30 To 11:15</th>
+               <th> 11:15 To 12:00</th>
+               <th> 12:00 To 12:45</th>
+               <th> 12:45 To 1:30</th>
+          </tr>
+          <tr>
+                
+          <td>MONDAY</td>
+          <td>ENGLISH</td>
+          <td>URDU</td>
+          <td>COMPUTER</td>
+          <th rowspan="6" style="font-size: xx-large;">  B <br> R<br>E<br>A<br>K<br></th>
+          <td>PHYSICS </td>
+          <td>MATH</td>
+          <td>ISLAMIYAT</td>
+          <td>PAK STUDY</td>
+          </tr>
+          <tr> 
+          <td >TUESDAY</td>
+          <td>ENGLISH</td>
+          <td>URDU</td>
+          <td>COMPUTER</td>
+          <td>PHYSICS </td>
+          <td>MATH</td>
+          <td>ISLAMIYAT</td>
+          <td>PAK STUDY</td>
+          </tr>
+          <tr>
+               
+               <td >WEDNESDAY</td>
+          <td>ENGLISH</td>
+          <td>URDU</td>
+          <td>COMPUTER</td>
+          <td>PHYSICS </td>
+          <td>MATH</td>
+          <td>ISLAMIYAT</td>
+          <td>PAK STUDY</td>
+          </tr> 
+          <tr>
+               
+               <td>THURSDAY</td>
+          <td>ENGLISH</td>
+          <td>URDU</td>
+          <td>COMPUTER</td>
+          <td>PHYSICS </td>
+          <td>MATH</td>
+          <td>ISLAMIYAT</td>
+          <td>PAK STUDY</td>
+          </tr>
+          <tr>
+               
+               <td>FRIDAY</td>
+          <td>ENGLISH</td>
+          <td>URDU</td>
+          <td>COMPUTER</td>
+          <td>PHYSICS</td>
+          <td>MATH</td>
+          <td>-OFF</td>
+          <td>-OFF</td>
+          </tr>
+          <tr>
+               
+               <td>SATURDAY</td>
+          <td>ENGLISH</td>
+          <td>URDU</td>
+          <td>COMPUTER</td>
+          <td>PHYSICS </td>
+          <td>MATH</td>
+          <td>ISLAMIYAT</td>
+          <td>PAK STUDY</td>
+          </tr>
+          <tr>
+               
+               <td>SUNDAY</td>
+             
+                 <td colspan="8" style="font-size: xx-large;background-color: beige;"> <pre>                   HOLIDAY</pre></td>
+                
+          </tr>
+               </table>
+               </center>
+               
+ <a href="https/www.youtube.com" target="main"> <center><img src="YOUTUBE.jPG"alt=""youtube></center></a>              
 </body>
 </html>
+    
